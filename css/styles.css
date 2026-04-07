@@ -44,3 +44,24 @@ code {
   text-transform: none;
   font-weight: normal;
 }
+
+hr{
+  border-top: 3px double #dab655; /* RRGGBB*/
+}
+a{
+  color: #dab655;
+  border: 1px solid #dab655;
+  padding: 5px 10px;
+}
+a:hover{
+  border-width: 3px;
+}
+ul {
+  list-style: none;
+}
+li {
+  display:inline-block; margin-right: 10px;
+}
+nav{
+  margin-bottom: 20px; padding:10px; border-bottom:3px double #dab655;
+}

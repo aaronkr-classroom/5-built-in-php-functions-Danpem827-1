@@ -1,19 +1,21 @@
 <?php
-$text = 'Home sweet home';
+$text = 'homE sweeT homE';
 ?>
-<?php include 'includes/header.php'; ?>
-
 <p>
-  <b>Lowercase:</b>
+  <b>Lowercase: 소문자로 변경하기</b>
+  <?= strtolower($text) ?>
   <br>
-  <b>Uppercase:</b>
+  <b>Uppercase: 대문자로 변경하기</b>
+  <?= strtoupper($text)?>
   <br>
-  <b>Uppercase first letter</b>
+  <b>Uppercase first letter: 첫 문자만 대문자로</b>
+  <?= ucwords($text) ?>
   <br>
-  <b>Character count:</b>
+  <b>Character count: 문자의 개수</b>
+  <?= strlen($text)?>
   <br>
-  <b>Word count:</b>
+  <b>Word count:단어의 개수</b>
+  <?= str_word_count($text) ?>
+
   
 </p>
-
-<?php include 'includes/footer.php'; ?>
